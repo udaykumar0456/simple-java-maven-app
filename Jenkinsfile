@@ -1,6 +1,9 @@
-date
-pwd
-ls
-uname -a
-uname -r
-ls -l
+pipeline {
+  agent any
+  stages {
+    stage ("build") {
+      steps {
+      }
+    }
+  }
+}

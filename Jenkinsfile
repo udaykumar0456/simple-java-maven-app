@@ -24,20 +24,13 @@ pipeline {
         }
       }
     }
-     stage ("test") {
-      steps {
-        echo 'test the application...'
-      }
-    }
      stage ("deploy") {
       steps {
-        echo 'deploying the application...'
+        script {
+         echo 'deploying the application...'
+        }
       }
     }
-    post {
-      always {
-        
-        
   }
 }
 
